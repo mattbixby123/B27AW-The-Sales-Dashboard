@@ -1,13 +1,25 @@
-import { Grid } from "@mui/material";
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import DashboardIcon from '@mui/icons-material/Dashboard';
-import LiveHelpIcon from '@mui/icons-material/LiveHelp';
+import { Grid, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
+import { Dashboard as DashboardIcon, LiveHelp as LiveHelpIcon } from '@mui/icons-material';
 
 function Sidebar() {
   return ( 
-    <Grid item>
+    <Grid item sx={{
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      width: '200px',
+      height: '100%',
+      backgroundColor: 'background.paper',
+      transition: 'width 0.3s ease-in-out',
+      overflowY: 'auto',
+      zIndex: 1000,
+      '&:hover': {
+        width: '250px',
+      },
+      '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
+        color: 'black'
+      },
+    }}>
       <ListItemButton>
         <ListItemIcon>
           <DashboardIcon />
