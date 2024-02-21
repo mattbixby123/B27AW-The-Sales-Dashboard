@@ -2,7 +2,8 @@ import { Grid } from "@mui/material";
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import { DashboardIcon, FAQIcon } from '@mui/icons-material/Dashboard';
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import LiveHelpIcon from '@mui/icons-material/LiveHelp';
 
 function Sidebar() {
   return ( 
@@ -15,7 +16,7 @@ function Sidebar() {
       </ListItemButton>
       <ListItemButton>
         <ListItemIcon>
-          <FAQIcon />
+          <LiveHelpIcon />
         </ListItemIcon>
         <ListItemText primary="FAQ" />
       </ListItemButton>

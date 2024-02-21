@@ -1,5 +1,5 @@
-import { Avatar, Grid, TextField, Button } from "@mui/material";
-import { DashboardIcon, FAQIcon } from '@mui/icons-material/Dashboard';
+import { Avatar, Grid, } from "@mui/material";
+import { deepOrange } from '@mui/material/colors';
 
 function Heading() {
   return ( 
