@@ -1,15 +1,30 @@
-import { Avatar, Grid, } from "@mui/material";
-import { deepOrange } from '@mui/material/colors';
+import { Grid } from "@mui/material";
+import RestaurantIcon from '@mui/icons-material/Restaurant';
 
 function Heading() {
   return ( 
-    <Grid item align="center">
-      <Avatar sx={{ bgcolor: deepOrange[500] }} variant="square">
-        NNB
-      </Avatar>
-      <h2>NomNom Bistro</h2>
+    <Grid item sx={{
+      position: 'fixed',
+      top: 0,
+      left: 0,
+      width: '100%',
+      backgroundColor: '#e97042',
+      color: 'white',
+      padding: '10px',
+      textAlign: 'center',
+      zIndex: 999,
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    }}>
+      <Grid item>
+        <RestaurantIcon sx={{ marginRight: '10px', color: '#000000' }} />
+      </Grid>
+      <Grid item>
+        <h2>NomNom Bistro</h2>
+      </Grid>
     </Grid>
    );
 }
 
-export default Heading
+export default Heading;
