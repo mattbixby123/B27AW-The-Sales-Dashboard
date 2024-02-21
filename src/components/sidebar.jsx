@@ -7,15 +7,15 @@ function Sidebar() {
       position: 'fixed',
       top: 0,
       left: 0,
-      width: '200px',
+      width: '190px',
       height: '100%',
       backgroundColor: '#ee9977',
       transition: 'width 0.3s ease-in-out',
       overflowY: 'auto',
       zIndex: 1000,
-      paddingTop: '100px',
+      paddingTop: '200px',
       '&:hover': {
-        width: '250px',
+        width: '33%',
       },
       '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
         color: 'black'

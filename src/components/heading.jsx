@@ -7,7 +7,7 @@ function Heading() {
       position: 'fixed',
       top: 0,
       left: 0,
-      width: '100%',
+      width: '33%',
       backgroundColor: '#e97042',
       color: 'white',
       padding: '10px',
@@ -22,6 +22,9 @@ function Heading() {
       </Grid>
       <Grid item>
         <h2>NomNom Bistro</h2>
+      </Grid>
+      <Grid item>
+        (Dashboard Owner)
       </Grid>
     </Grid>
    );
