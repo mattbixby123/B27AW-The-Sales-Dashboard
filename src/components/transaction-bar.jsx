@@ -10,10 +10,14 @@ const TransactionBar = () => {
             Transaction Bar
           </Typography>
         </Box>
-        <Box sx={{ marginRight: 2 }}>
-          <Button color="inherit">Action 1</Button>
-          <Button color="inherit">Action 2</Button>
-          {/* Add more buttons or components as needed */}
+        <Box sx={{ marginRight: 2, overflowY: 'auto', maxHeight: '100px' }}>
+          {/* Placeholder for recent transactions */}
+          <Typography variant="body1" component="div">
+            {/* Replace with actual recent transactions */}
+            {Array.from({ length: 10 }).map((_, index) => (
+              <div key={index}>Recent Transaction {index + 1}</div>
+            ))}
+          </Typography>
         </Box>
       </Toolbar>
     </AppBar>
