@@ -12,7 +12,7 @@ function Heading() {
       color: 'white',
       padding: '10px',
       textAlign: 'center',
-      zIndex: 999,
+      zIndex: 1001,
       display: 'flex',
       justifyContent: 'center',
       alignItems: 'center',

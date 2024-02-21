@@ -9,10 +9,11 @@ function Sidebar() {
       left: 0,
       width: '200px',
       height: '100%',
-      backgroundColor: 'background.paper',
+      backgroundColor: '#ee9977',
       transition: 'width 0.3s ease-in-out',
       overflowY: 'auto',
       zIndex: 1000,
+      paddingTop: '100px',
       '&:hover': {
         width: '250px',
       },
