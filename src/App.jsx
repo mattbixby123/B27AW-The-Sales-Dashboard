@@ -5,32 +5,24 @@ import PrimaryDash from './components/primary-dash';
 import Heading from './components/heading';
 import TransactionBar from './components/transaction-bar';
 import { Grid } from '@mui/material';
-import { mockTransactions } from '/mockData'; // Import mockTransactions data
-
+import { mockTransactions } from '/mockData'; // Import mockTransactions data, assuming the path is correct
 
 function App() {
-
   return (
-    <Grid container>
-      {/* Sidebar Component */}
-      <Grid item xs={12} md={3}>
+    <Grid container> {/* MAIN CONTAINER FOR APP*/}
+      <Grid item xs={12} md={3}> {/* Sidebar Component Grid */}
         <Sidebar />
       </Grid>
-      {/* Main Content Area */}
-      <Grid item xs={12} md={9}>
-        <Grid container direction="column">
-          {/* Heading Component */}
-          <Grid item>
-            <Heading />
-          </Grid>
-          {/* PrimaryDash Component */}
-          <Grid item>
-            <PrimaryDash transactions={mockTransactions} />
-          </Grid>
-        </Grid>
+
+      <Grid item xs={12} md={9}> {/* Header Grid */}
+        <Heading />
       </Grid>
-      {/* TransactionBar Component */}
-      <Grid item xs={12}>
+
+      <Grid item xs={12} md={9}> {/* PrimaryDash Grid */}
+        <PrimaryDash transactions={mockTransactions} />
+      </Grid>
+
+      <Grid item xs={12}> {/* TransactionBar Component Grid */}
         <TransactionBar transactions={mockTransactions} />
       </Grid>
     </Grid>
