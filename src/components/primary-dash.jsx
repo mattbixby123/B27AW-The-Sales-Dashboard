@@ -7,44 +7,47 @@ const PrimaryDash = () => {
       {/* Title */}
       <Grid item xs={12}>
         <Typography variant="h4" gutterBottom>
-          Dashboard Title
+          Sales & Revenue Tracker: Food Items
         </Typography>
       </Grid>
-      {/* Section 1 */}
-      <Grid item xs={12} sm={6}>
+      {/* Chart Section 1 */}
+      <Grid item xs={12} sm={4}>
         <Paper elevation={3} sx={{ height: '100%', p: 2 }}>
-          {/* Placeholder content for Section 1 */}
+          {/* Placeholder content for Chart Section 1 */}
           <Typography variant="h6" gutterBottom>
-            Section 1
+            Chart Section 1
           </Typography>
+          {/* Replace with your chart component */}
           <Typography variant="body1">
-            This is where your first section content goes.
+            [Chart Section 1 content goes here]
           </Typography>
         </Paper>
       </Grid>
-      {/* Section 2 */}
-      <Grid item xs={12} sm={6}>
+      {/* Chart Section 2 */}
+      <Grid item xs={12} sm={4}>
         <Paper elevation={3} sx={{ height: '100%', p: 2 }}>
-          {/* Placeholder content for Section 2 */}
+          {/* Placeholder content for Chart Section 2 */}
           <Typography variant="h6" gutterBottom>
-            Section 2
+            Chart Section 2
           </Typography>
+          {/* Replace with your chart component */}
           <Typography variant="body1">
-            This is where your second section content goes.
+            [Chart Section 2 content goes here]
           </Typography>
         </Paper>
       </Grid>
-      {/* Card */}
-      <Grid item xs={12}>
-        <Card sx={{ width: '100%' }}>
-          {/* Placeholder content for the card */}
+      {/* Chart Section 3 */}
+      <Grid item xs={12} sm={4}>
+        <Paper elevation={3} sx={{ height: '100%', p: 2 }}>
+          {/* Placeholder content for Chart Section 3 */}
           <Typography variant="h6" gutterBottom>
-            Card Title
+            Chart Section 3
           </Typography>
+          {/* Replace with your chart component */}
           <Typography variant="body1">
-            This is a card content. You can add more cards or other components here.
+            [Chart Section 3 content goes here]
           </Typography>
-        </Card>
+        </Paper>
       </Grid>
     </Grid>
   );
