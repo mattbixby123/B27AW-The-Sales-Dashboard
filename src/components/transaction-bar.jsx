@@ -1,7 +1,7 @@
 import React from 'react';
-import { AppBar, Toolbar, IconButton, Typography, Button, Box } from '@mui/material';
+import { AppBar, Toolbar, Typography, Box } from '@mui/material';
 
-const TransactionBar = () => {
+const TransactionBar = ({ transactions }) => {
   return (
     <AppBar position="fixed" sx={{ top: 'auto', bottom: 0 }}>
       <Toolbar sx={{ justifyContent: 'space-between' }}> 
@@ -11,13 +11,12 @@ const TransactionBar = () => {
           </Typography>
         </Box>
         <Box sx={{ marginRight: 2, overflowY: 'auto', maxHeight: '100px' }}>
-          {/* Placeholder for recent transactions */}
-          <Typography variant="body1" component="div">
-            {/* Replace with actual recent transactions */}
-            {Array.from({ length: 10 }).map((_, index) => (
-              <div key={index}>Recent Transaction {index + 1}</div>
-            ))}
-          </Typography>
+          {/* Display recent transactions */}
+          {transactions.map((transaction, index) => (
+            <Typography key={index} variant="body1" component="div">
+              {`${transaction.user} made a transaction of $${transaction.cost} on ${transaction.date}`}
+            </Typography>
+          ))}
         </Box>
       </Toolbar>
     </AppBar>
